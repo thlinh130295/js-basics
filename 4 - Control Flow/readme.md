@@ -1,0 +1,11 @@
+In this section, we learn about all the loops available in JavaScript, include:
+- If...else
+- Switch...case
+- For
+- While
+- Do-while
+- Infinite Loops
+- For...in
+- For...of
+- Break and Continue
+- Some exercises for practicing
