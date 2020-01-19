@@ -14,6 +14,7 @@
   <body>
     <h1>IV - Control Flow</h1>
     <i><u>Note:</u> Open browser console before demo.</i>
+
     <h2>For...in</h2>
     <code>
       const person = {
@@ -40,8 +41,7 @@
     </code>
     <button onclick="forIn2()">demo</button>
     <script src="forin.js"></script>
-    <br />
-    <br />
+
     <h2>For...of</h2>
     <code>const colors = ["red", "green", "blue"];</code>
     <br />
@@ -52,7 +52,49 @@
     </code>
     <button onclick="forOf()">demo</button>
     <script src="forof.js"></script>
+
+    <h2>Break and Continue</h2>
+    Example: <br />
+    <code>
+      let i = 0;
+      <br />
+      while (i <= 10) {
+      <div>console.log(i);</div>
+      <div>i++;</div>
+      }
+    </code>
+    <button onclick="example()">demo</button>
     <br />
     <br />
+    ... with break:
+    <br />
+    <code>
+      let i = 0;
+      <br />
+      while (i <= 10) {
+      <div>if (i === 5) <b>break;</b></div>
+      <div>console.log(i);</div>
+      <div>i++;</div>
+      }
+    </code>
+    <button onclick="demoBreak()">demo</button>
+    <br />
+    <br />
+    ... with continue:
+    <br />
+    <code>
+      let i = 0;
+      <br />
+      while (i <= 10) {
+      <div>if (i % 2 === 0) {</div>
+      <div>i++;</div>
+      <div><b>continue;</b></div>
+      <div>}</div>
+      <div>console.log(i);</div>
+      <div>i++;</div>
+      }
+    </code>
+    <button onclick="demoContinue()">demo</button>
+    <script src="breakandcontinue.js"></script>
   </body>
 </html>
