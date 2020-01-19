@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      code div {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>IV - Control Flow</h1>
+    <i><u>Note:</u> Open browser console before demo.</i>
+    <h2>For...in</h2>
+    <code>
+      const person = {
+      <div>name: "Mosh",</div>
+      <div>age: 30</div>
+      };
+    </code>
+    <br />
+    <code>
+      <b>for</b> (let key <b>in</b> person)
+      <div>
+        console.log(key, person[key]);
+      </div>
+    </code>
+    <button onclick="forIn()">demo</button>
+    <br />
+    <br />
+    <code>const colors = ["red", "green", "blue"];</code>
+    <br />
+    <code>
+      <b>for</b> (let index <b>in</b> colors)
+
+      <div>console.log(index, colors[index]);</div>
+    </code>
+    <button onclick="forIn2()">demo</button>
+    <script src="forin.js"></script>
+    <br />
+    <br />
+    <h2>For...of</h2>
+    <code>const colors = ["red", "green", "blue"];</code>
+    <br />
+    <code>
+      <b>for</b> (let color <b>of</b> colors)
+
+      <div>console.log(color);</div>
+    </code>
+    <button onclick="forOf()">demo</button>
+    <script src="forof.js"></script>
+    <br />
+    <br />
+  </body>
+</html>
